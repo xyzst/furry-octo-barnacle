@@ -17,6 +17,8 @@
 		58CAA2802429B77C002E1F45 /* iHackerNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA27F2429B77C002E1F45 /* iHackerNewsUITests.swift */; };
 		58CAA28F2429BA9A002E1F45 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA28E2429BA9A002E1F45 /* NetworkManager.swift */; };
 		58CAA2912429BB95002E1F45 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA2902429BB95002E1F45 /* PostData.swift */; };
+		58CAA2942429C2A6002E1F45 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA2932429C2A6002E1F45 /* DetailView.swift */; };
+		58CAA2962429C511002E1F45 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA2952429C511002E1F45 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		58CAA2812429B77C002E1F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58CAA28E2429BA9A002E1F45 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		58CAA2902429BB95002E1F45 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		58CAA2932429C2A6002E1F45 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		58CAA2952429C511002E1F45 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,7 @@
 				58CAA28D2429BA86002E1F45 /* Models */,
 				58CAA25D2429B77A002E1F45 /* AppDelegate.swift */,
 				58CAA25F2429B77A002E1F45 /* SceneDelegate.swift */,
-				58CAA2612429B77A002E1F45 /* ContentView.swift */,
+				58CAA2922429C295002E1F45 /* Views */,
 				58CAA2632429B77C002E1F45 /* Assets.xcassets */,
 				58CAA2682429B77C002E1F45 /* LaunchScreen.storyboard */,
 				58CAA26B2429B77C002E1F45 /* Info.plist */,
@@ -148,6 +152,16 @@
 				58CAA2902429BB95002E1F45 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58CAA2922429C295002E1F45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58CAA2612429B77A002E1F45 /* ContentView.swift */,
+				58CAA2932429C2A6002E1F45 /* DetailView.swift */,
+				58CAA2952429C511002E1F45 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,10 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				58CAA2912429BB95002E1F45 /* PostData.swift in Sources */,
+				58CAA2942429C2A6002E1F45 /* DetailView.swift in Sources */,
 				58CAA28F2429BA9A002E1F45 /* NetworkManager.swift in Sources */,
 				58CAA25E2429B77A002E1F45 /* AppDelegate.swift in Sources */,
 				58CAA2602429B77A002E1F45 /* SceneDelegate.swift in Sources */,
 				58CAA2622429B77A002E1F45 /* ContentView.swift in Sources */,
+				58CAA2962429C511002E1F45 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
