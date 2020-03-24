@@ -9,10 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject
+    var networkMgr = NetworkManager()
+    
     var body: some View {
-        List {
-            Text("Hello, World!")
-            Text("??")
+        NavigationView {
+            List(networkMgr.posts) { post in
+                HStack {
+                    Text(String(post.points))
+                    Text(post.title)
+                }
+            }
+            .navigationBarTitle("yCombinator News")
+        }
+        .onAppear {
+            self.networkMgr.fetch()
         }
     }
 }
